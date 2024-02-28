@@ -1,0 +1,288 @@
+.jobcenter_container {
+    position: relative;
+    height: 60%;
+    width: 55%;
+    border-radius: 10px;
+    box-shadow: 1px 0px 8px 1px rgba(31, 30, 30, 0.8);
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+}
+
+.jobcenter_header {
+    position: relative;
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.jobcenter_header_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.jobcenter_header h3 {
+    font-size: 2rem;
+}
+
+.jobcenter_player_details {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.jobcenter_player_details p {
+    margin: 0;
+}
+
+.jobcenter_header_icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.toggle_theme, .jobcenter_close_btn {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.jobcenter_body {
+    display: flex;
+    height: 90%;
+}
+
+.jobcenter_joblist {
+    width: 20%;
+    overflow-y: scroll;
+    padding: 15px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.jobcenter_joblist div {
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.jobcenter_joblist div:hover {
+    cursor: pointer;
+    transform: scale(1.05)
+}
+
+.jobcenter_job {
+    display: flex;
+    align-items: center;
+}
+
+.jobcenter_job_icon {
+    width: 25%;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 5px;
+}
+
+.jobcenter_job span {
+    width: 75%;
+    text-align: center;
+    padding: 5px;
+}
+
+.jobcenter_jobdata {
+    flex-grow: 1; 
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.jobcenter_jobdata h3 {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.jobdata_header {
+    height: 6%;
+    margin-bottom: 5px;
+}
+
+.jobdata_image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bg_image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.current_image {
+    opacity: 1;
+}
+
+.jobdata_box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 35%;
+    margin-bottom: 20px;
+}
+
+.jobdata_info {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.3);;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.jobdata_info_header {
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.jobdata_info_content {
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.jobdata_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 25%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.jobdata_buttons button {
+    height: 50%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.jobdata_buttons button:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.jobdata_prog_container {
+    width: 96%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.jobdata_prog_header {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jobdata_prog_header h4 {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.jobdata_current_rep {
+    color: white;
+    font-size: 0.9rem;
+    font-style: italic;
+    padding-right: 5px;
+}
+
+.jobdata_progressbar {
+    padding-right: 5px;
+    width: 100%;
+    height: 30px;
+    padding-bottom: 1px;
+}
+
+#job_rep_progress {
+    width: 100%;
+    height: 110%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+#job_rep_progress .ui-progressbar-value {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    border: none;
+}
+
+.jobdata_guide_container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    height: 75%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+.jobdata_guide_header {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.guide_content {
+    display: flex;
+    margin-top: 5px;
+}
+
+.jobdata_guide_active .jobdata_guide_container {
+    display: flex;
+}
+
+.jobdata_close_guide {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    background: none;
+    border: none;
+}

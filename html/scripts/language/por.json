@@ -1,0 +1,21 @@
+{
+    "general": {
+        "welcome": "Bem-vindo!",
+        "available_jobs": "Trabalhos disponíveis",
+        "current_job": "Trabalho atual:",
+        "current_jobs": "Trabalhos atuais:",
+        "accept_job": "Aceitar trabalho",
+        "set_gps": "Definir GPS",
+        "job_guide": "Guia de trabalho",
+        "job_details": "Detalhes do trabalho:",
+        "job_rep": "Reputação:"
+    },
+    "job_details": {
+        "salary": "Salário:",
+        "role": "Função:",
+        "description": "Descrição:"
+    },
+    "reputation": {
+        "level": "Nível"
+    }
+}

@@ -1,0 +1,71 @@
+/*----------------------------*/
+/*---- BOII | DEVELOPMENT ----*/
+/*----------------------------*/
+
+:root {
+    --text-light: rgba(0, 0, 0, 0.7);
+    --text-dark: rgba(255, 255, 255, 0.7);
+    --text2-light: rgba(255, 255, 255, 0.85);
+    --text2-dark: rgba(255, 255, 255, 0.5);
+    --background-light: rgba(210, 210, 210, 1);
+    --background-dark: rgba(31, 30, 30, 1);
+    --jobdata-background-light: rgba(232, 232, 232, 1);
+    --jobdata-background-dark: rgba(49, 48, 48, 1);
+    --joblist-bg-light: rgba(0, 0, 0, 0.3);
+    --joblist-bg-dark: rgba(0, 0, 0, 0.3);
+    --joblist-bs-light: 1px 0px 5px 1px rgba(0, 0, 0, 0.8);
+    --joblist-bs-dark: 1px 0px 5px 1px rgba(255, 255, 255, 0.2);
+    --joblist-bs-hover-light: 1px 0px 5px 1px rgba(0, 0, 0, 0.8);
+    --joblist-bs-hover-dark: 1px 0px 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+.jobcenter_container {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+.jobcenter_jobdata {
+    background-color: var(--jobdata-background-light);
+}
+
+.jobcenter_container.darkmode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+.jobcenter_jobdata.darkmode {
+    background-color: var(--jobdata-background-dark);
+}
+
+.jobcenter_joblist div {
+    background-color: var(--joblist-bg-light);
+
+}
+
+.jobcenter_joblist.darkmode div {
+    background-color: var(--joblist-bg-dark);
+}
+
+.jobcenter_player_details {
+    color: var(--text2-light);
+}
+
+.jobcenter_player_details.darkmode {
+    color: var(--text2-dark);
+}
+
+.jobdata_buttons button {
+    color: var(--text-dark);
+}
+
+.jobdata_buttons.darkmode button {
+    color: var(--text-light);
+}
+
+.jobdata_current_rep {
+    color: var(--text2-light);
+}
+
+.jobdata_current_rep.darkmode {
+    color: var(--text2-dark);
+}

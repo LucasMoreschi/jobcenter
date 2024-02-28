@@ -1,0 +1,21 @@
+{
+    "general": {
+        "welcome": "Welcome!",
+        "available_jobs": "Available Jobs",
+        "current_job": "Current Job:",
+        "current_jobs": "Current Jobs:",
+        "accept_job": "Accept Job",
+        "set_gps": "Set GPS",
+        "job_guide": "Job Guide",
+        "job_details": "Job Details:",
+        "job_rep": "Reputation:"
+    },
+    "job_details": {
+        "salary": "Salary:",
+        "role": "Role:",
+        "description": "Description:"
+    },
+    "reputation": {
+        "level": "Level"
+    }
+}
